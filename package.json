@@ -1,6 +1,6 @@
 {
-  "name": "matx-react",
-  "version": "3.0.0",
+  "name": "mui-admin-panel",
+  "version": "0.0.1-beta.001",
   "private": true,
   "dependencies": {
     "@mui/icons-material": "^5.11.0",

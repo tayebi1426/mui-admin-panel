@@ -1,7 +1,6 @@
-import { Menu, ThemeProvider } from '@mui/material';
-import { Box, styled } from '@mui/system';
-import useSettings from 'hooks/useSettings';
-import React, { Fragment } from 'react';
+import { Menu } from '@mui/material'
+import { Box, styled } from '@mui/system'
+import React, { Fragment } from 'react'
 
 const MenuButton = styled(Box)(({ theme }) => ({
   display: 'inline-block',
@@ -15,7 +14,6 @@ const ProfileMenu = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const children = React.Children.toArray(props.children);
   let { shouldCloseOnItemClick = true, horizontalPosition = 'left' } = props;
-  const { settings } = useSettings();
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
